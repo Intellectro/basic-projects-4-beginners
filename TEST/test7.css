@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+*::after, *::before{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../DESKTOP-IMG/img/ui.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    image-rendering: pixelated;
+    padding-left: 4%;
+    padding-right: 4%;
+    /* overflow: hidden; */
+}
+.container .head-flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-flex-container .logo img{
+    width: 80px;
+    height: 80px;
+    padding-top: 15px;
+}
+.head-flex-container nav .nav-links{
+    list-style: none;
+}
+.head-flex-container .nav-links li{
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head-flex-container .nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+.head-flex-container .burger{
+    width: 28px;
+    height: 28px;
+    display: none;
+    cursor: pointer;
+}
+.head-flex-container .bar{
+    width: 100%;
+    height: 4px;
+    border-radius: 1vmin;
+    background-color: white;
+}
+.content{
+    margin: 0 auto;
+    width: 550px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    row-gap: 3px;
+}
+.content .text{
+    font-size: 45px;
+}
+.content button{
+    min-width: 130px;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-width: thin;
+    background: transparent;
+    cursor: pointer;
+}
+.content button a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.section{
+    width: 100vw;
+    height: 90vh;
+    background-color: white;
+    text-align: center;
+    font-size: 34px;
+}
+.section.sec{
+    background-color: aliceblue;
+}
+.section.third{
+    background-color: white;
+}
+.section.third span{
+    color: aqua;
+}
+.scroll-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    cursor: pointer;
+    animation: bounce 2s linear infinite;
+    visibility: hidden;
+    z-index: -1;
+}
+.scroll-icon span{
+    font-size: 36px;
+    font-weight: bolder;
+}
+.scroll-icon a{
+    color: black;
+}
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+}
+.side-menu{
+    display: none;
+}
+@keyframes bounce{
+    0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width:768px){
+    :root{
+        --current: 50;
+    }
+    .container .nav-links{
+        display: none;
+    }
+    header{
+        position: relative;
+    }
+    .container .burger{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 4px;
+        cursor: pointer;
+    }
+    .burger .bar{
+        background-color: black;
+    }
+    .content .text{
+        font-size: 35px;
+    }
+    .side-menu{
+        display: block;
+        height: 0;
+        transition: all 0.6s linear;
+        overflow: hidden;
+        padding-left: 2.5%;
+    }
+    .side-menu .side-links{
+        list-style: none;
+        padding-bottom: 10px;
+    }
+    .side-menu .side-links li{
+        margin-top: 9px;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+    /* .side-menu{
+        height: auto !important;
+    } */
+    .side-links li a{
+        color: black;
+    }
+    .show-nav{
+        height: auto !important;
+    }
+}

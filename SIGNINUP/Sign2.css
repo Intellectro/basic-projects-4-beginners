@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-container{
+    width: 900px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+.card{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 2vmin;
+}
+.first, .last{
+    position: absolute;
+    transition: all 0.6s linear;
+}
+.page-name{
+    padding: 30px 0;
+}
+.page-name span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contents form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.flex-swiper-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.uname{
+    position: relative;
+}
+.uname input{
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid black;
+    padding-top: 1.5pc;
+    outline: none;
+    width: 100%;
+}
+.uname input::placeholder{
+    color: transparent;
+}
+.uname label{
+    position: absolute;
+    left: 0;
+    top: 15%;
+    font-size: 14px;
+    transition: all 0.6s linear;
+}
+input:focus ~ label{
+    top: 0;
+    font-size: 12px;
+}
+.link-paths{
+    line-height: 30px;
+    text-align: center;
+}
+.link-paths a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+.link-paths button{
+    min-width: 130px;
+    padding: 8px 20px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 2vmin;
+    cursor: pointer;
+}
+.main{
+    background: url(../DESKTOP-IMG/img/ui.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    row-gap: 2pc;
+    z-index: 1;
+}
+.main .page-title span{
+    font-size: 32px;
+}
+.main .btn-div{
+    display: flex;
+    column-gap: 1pc;
+}
+.main .btn-div button{
+    min-width: 130px;
+    padding: 8px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right .last{
+    transform: translateX(19rem);
+}
+.left .first{
+    transform: translateX(-19rem);
+}

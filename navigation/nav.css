@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* position: relative; */
+}
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    padding: 10px 3%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.for-logo .logo-name {
+    font-size: x-large;
+}
+.logo-name .color {
+    color: rgb(42, 199, 251);
+}
+.navlinks .menu-list {
+    list-style: none;
+}
+.navlinks li {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.navlinks li a {
+    text-decoration: none;
+    color: rgb(42, 199, 251);
+}
+.burger {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+}
+.burger .bar {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 1vmin;
+    margin-top: 3px;
+    position: relative;
+    transition: 0.6s;
+}
+.bar.two {
+    box-shadow: 0px 7px 0px black;
+}
+.rearrange .one {
+    transform: rotate(45deg);
+}
+.rearrange .two {
+    transform: rotate(-45deg);
+    box-shadow: none;
+    position: absolute;
+    top: 0;
+}
+
+.side-menu {
+    width: 100%;
+    padding-left: 3%;
+    /* position: absolute; */
+    transform: translateY(-200%);
+    transition: 0.7s;
+    background-color: white;
+}
+.side-menu .side-lists {
+    list-style: none;
+}
+.side-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 8px 0px;
+    transition: 0.3s;
+}
+.side-lists li a:hover {
+    font-weight: bold;
+    background-color: rgb(42, 199, 251);
+    padding-left: 10px;
+}
+.show {
+    transform: translateY(0);
+}
+#check {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}

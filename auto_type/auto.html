@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="master" content="Jesus Christ">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="developer" content="Aneke Oluebube Samuel">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: aqua;
+                position: relative;
+            }
+            h1{
+                text-transform: uppercase;
+                font-size: 50px;
+            }
+            h1 span{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>The founder of <span class="auto-write"></span></h1>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        
+        <script>
+            let typed = new Typed('.auto-write', {
+                strings: ["Javascript", "html", "css", "java", "kotlin", "scale", "rx", "linux"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            });
+        </script>
+    </body>
+</html>

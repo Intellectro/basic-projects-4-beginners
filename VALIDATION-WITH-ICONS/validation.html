@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./validation.css">   
+    <title>Validaton</title>
+</head>
+<body>
+    <form id="form" action="/">
+        <h1>Registration</h1>
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username">
+            <div class="error"></div>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+        </div>
+        <div class="form-control">
+            <label for="Email">Email</label>
+            <input type="email" id="Email" placeholder="Email ID">
+            <div class="error"></div>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+        </div>
+        <div class="form-control">
+            <label for="Phone Number">Phone Number</label>
+            <input type="text" id="number" placeholder="Phone Number">
+            <div class="error"></div>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+        </div>
+        <div class="form-control">
+            <label for="Password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <div class="error"></div>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+        </div>
+        <div class="form-control">
+            <label for="password">Repeat Password</label>
+            <input type="password" id="r-password" placeholder="Repeat Password">
+            <div class="error"></div>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+        </div>
+        <button type="submit">SIGN UP</button>
+    </form>
+    <script src="./validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+.output-icon{
+    position: fixed;
+    bottom: 4%;
+    left: 3%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10vmax;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+    animation: circum 3s linear infinite,
+    circum2 3s linear infinite,
+    circum3 3s linear infinite;
+    cursor: pointer;
+}
+@keyframes circum{
+    0%{
+        outline: 1px solid #034b5b;
+    }
+    25%{
+        outline-offset: 1px;
+    }
+    50%{
+        outline-offset: 5px;
+    }
+    75%{
+        outline-offset: 3px;
+    }
+    100%{
+        outline-offset: 2px;
+    }
+}
+@keyframes circum2{
+    0%{
+        outline: 1px solid #034b5b;
+    }
+    25%{
+        outline-offset: 1px;
+    }
+    50%{
+        outline-offset: 1.5px;
+    }
+    75%{
+        outline-offset: 2px;
+    }
+    100%{
+        outline-offset: 2.5px;
+    }
+}
+@keyframes circum3{
+    0%{
+        outline: 1px solid #034b5b;
+    }
+    25%{
+        outline-offset: 0.5px;
+    }
+    50%{
+        outline-offset: 0.8px;
+    }
+    75%{
+        outline-offset: 1px;
+    }
+    100%{
+        outline-offset: 1.5px;
+    }
+}
+.output-icon i{
+    color: #034b5b;
+    font-weight: bold;
+    font-size: 37px;
+}
+.wsp-content-box{
+    width: 360px;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 15%;
+    left: 2%;
+    border-radius: 2vmin;
+    transition: 2s;
+}
+.wsp-auto-con{
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vmin;
+}
+.wsp-flex{
+    width: 100%;
+    padding: 10px 16px;
+}
+.one{
+    flex: 0.3;
+    height: 100px;
+    border-top-left-radius: 2vmin;
+    border-top-right-radius: 2vmin;
+    background-color: #034b5b;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.flexer-one{
+    display: flex;
+    align-items: center;
+}
+.text-con{
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+}
+.text{
+    font-size: 17px;
+    font-weight: bold;
+}
+.s-des{
+    margin-top: 3px;
+    font-size: 13px;
+}
+.close-widget{
+    text-align: right;
+}
+.close-widget i{
+    font-size: 22px;
+    cursor: pointer;
+}
+.logo-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10vmax;
+    background: url(../DESKTOP-IMG/parreceipt.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.two{
+    flex: 0.6;
+    background: url(/DESKTOP-IMG/whatbg.webp);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(230, 221, 212, 0.5);
+    display: flex;
+    align-items: center;
+}
+.msg-box{
+    width: 168px;
+    height: 110px;
+    background-color: white;
+    margin-left: 7px;
+    padding: 5px 12px;
+}
+.msg-flexr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.top-msg{
+    display: flex;
+    flex-direction: column;
+}
+.las-txt{
+    margin-bottom: 6px;
+}
+.logo-name{
+    font-size: 14.5px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4);
+}
+.intro-msg{
+    margin-top: 3px;
+}
+.msg{
+    font-size: 14px;
+}
+.time{
+    text-align: right;
+    font-size: 12px;
+}
+.thr{
+    flex: 0.3;
+    background-color: white;
+    border-bottom-left-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
+    height: 100%;
+}
+.btn-container{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.btn-container a{
+    text-decoration: none;
+}
+.btn-container a button{
+    min-width: 290px;
+    padding: 10px;
+    border-radius: 10vmin;
+    border: none;
+    background-color: #034b5b;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}

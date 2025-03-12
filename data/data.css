@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.select-form-div {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.select-form-div select {
+    width: 100%;
+    padding: 7px 9px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.card-container {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, calc(80% / 2.5));
+    gap: 19px;
+}
+
+.card {
+    width: 100%;
+    height: 350px;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card div {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-weight: bold;
+}

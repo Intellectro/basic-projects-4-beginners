@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-container{
+    width: 500px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    transition: 2s;
+    scroll-behavior: smooth;
+}
+.box{
+    position: relative;
+    z-index: 1;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 58px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.first{
+    background: url(../DESKTOP-IMG/img/ui.jpg);
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+}
+.sec{
+    background: url(../DESKTOP-IMG/img/ui2.jpg);
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+}
+.third{
+    background: url(../DESKTOP-IMG/img/fd.jpg);
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+}
+.fourth{
+    background: url(../DESKTOP-IMG/img/OIP\ \(29\).jfif);
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+}
+.fifth{
+    background: url(../DESKTOP-IMG/img/OIP\ \(30\).jfif);
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+}
+.sixth{
+    background: url(../DESKTOP-IMG/img/download\ \(10\).jfif);
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+}

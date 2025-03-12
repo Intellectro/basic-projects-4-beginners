@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+form{
+    width: 350px;
+    box-shadow: 0px 0px 100vmax rgba(0,0,0,0.5);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+form h1{
+    text-align: center;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.form-control input{
+    padding: 5px 0px;
+}
+.fa{
+    position: absolute;
+    top: 44%;
+    right: 0;
+    display: none;
+}
+form button{
+    width: 100%;
+    background-color: blue;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 1vmin;
+    padding: 8px 0px;
+    border: none;
+    cursor: pointer;
+}
+button:active{
+    font-size: 12px;
+}
+.fa-exclamation-circle{
+    color: red;
+}
+.fa-check-circle{
+    color: green;
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.success .fa-check-circle{
+    display: block;
+}
+.form-control.error .fa-exclamation-circle{
+    display: block;
+}
+.form-control .error{
+    font-size: 9px;
+    color: red;
+    height: 13px;
+    font-weight: bold; 
+}

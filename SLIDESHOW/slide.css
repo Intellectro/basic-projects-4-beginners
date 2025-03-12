@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.slides{
+    list-style: none;
+}
+.slides .slide img{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 0.9s ease-in-out 0.2s;
+}
+.slide[data-active] > img{
+    opacity: 1;
+    transition: all 0.4s ease-in;
+}
+button{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.second{
+    right: 0;
+}
+button:active{
+    background: rgba(0,0,0,0.5);
+}
+.first:active{
+    padding: 0px 20px 0px 0px;
+}
+.second:active{
+    padding: 0px 0px 0px 20px;
+}

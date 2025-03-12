@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: aliceblue;
+}
+section{
+    margin-top: 4em;
+}
+.title h2{
+    font-size: 33px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.title .underline{
+    margin: 10px auto;
+    width: 80px;
+    border: 2px solid rgb(42, 199, 251);
+}
+.review{
+    width: 400px;
+    margin-top: 2em;
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    row-gap: 10px;
+    text-align: center;
+}
+.img-container img{
+    border-radius: 100vmax;
+    box-shadow: 8px -4.5px 1px rgb(42,199,251);
+}
+#job{
+    color: rgb(42, 199, 251);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+} 
+.button-container button{
+    font-size: 18px;
+    background: transparent;
+    color: rgb(42, 199, 251);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.review .random-btn{
+    background: aliceblue;
+    border: 2px solid rgb(42, 199, 251);
+    padding: 5px 10px;
+    border-radius: 2vmin;
+    color: rgb(42, 199, 251);
+    font-weight: bold;
+    cursor: pointer;
+}
+.review button:active{
+    font-size: 12px;
+}

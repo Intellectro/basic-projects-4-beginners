@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../DESKTOP-IMG/R\ \(4\).jfif);
+    background-size: cover;
+    background-position: top;
+}
+.content{
+    position: relative;
+}
+.first-content{
+    width: 400px;
+    min-height: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    border-radius: 2vmin;
+    outline: 4px solid black;
+    outline-offset: 5px;
+}
+.first-content .text-item{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-box .m-width{
+    min-width: 130px;
+    padding: 8px 20px;
+    border-radius: 1vmin;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.btn-box .m-width:active{
+    font-size: 12px;
+}
+.second-content{
+    width: 400px;
+    min-height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    box-shadow: 0px 0px 0px 100vmax rgba(42, 199, 251, 0.4);
+}
+.del-icon{
+    position: absolute;
+    font-size: 38px;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+}
+.del-icon:hover{
+    font-size: 42px;
+}
+.hidden{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.show{
+    z-index: 1;
+}

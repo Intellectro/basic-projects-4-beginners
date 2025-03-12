@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.slider{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.slider > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.slider::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.circular{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    background-color: white;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.circular img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.loader-line{
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+    height: 9px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.loader-line .load{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.moveout{
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    from {
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}

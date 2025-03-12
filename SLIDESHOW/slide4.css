@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-container{
+    margin: 0 auto;
+    width: 880px;
+    position: relative;
+    /* border: 2px solid black; */
+}
+.product-container > button{
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.next{
+    right: -5%;
+}
+.prev{
+    left: -5%;
+}
+.product-flex-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.product-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+.product-content[data-active]{
+    opacity: 1;
+}
+.product-card{
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    border-radius: 2vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    row-gap: 10px;
+    text-align: center;
+}
+
+.product-card .img-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10vmax;
+    object-fit: cover;
+    outline: 3px solid rgb(243, 66, 66);
+    outline-offset: 3px;
+    box-shadow: 0px 0px 0px 3px white;
+}
+.product-card .img-container .name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.product-card .img-container .job{
+    font-size: small;
+}
+.product-card .img-container .text{
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.product-card::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: rgb(243, 66, 66);
+    border-top-left-radius: 2vmin;
+    border-top-right-radius: 2vmin;
+    height: 35%;
+}
+.rating-icons{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    color: white;
+    cursor: pointer;
+}
+.product-content.second{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}

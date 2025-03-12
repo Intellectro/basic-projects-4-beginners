@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    column-gap: 8px;
+}
+
+.box {
+    height: 100%;
+    width: var(--wid);
+    transition: all 1s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-one {
+    border-radius: 30px;
+    background-color: red;
+}
+
+.box-two {
+    border-radius: 30px;
+    background-color: blue;
+}
+
+.box-three {
+    border-radius: 30px;
+    background-color: black;
+}
+
+.box-four {
+    border-radius: 30px;
+    background-color: crimson;
+}
+
+.box-five {
+    border-radius: 30px;
+    background-color: purple;
+}
+
+span {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    pointer-events: none;
+}
